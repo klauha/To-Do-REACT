@@ -1,0 +1,36 @@
+/* TaskList.css */
+
+.task-list {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+   
+}
+
+.task-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.task-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.task-item .btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+ 

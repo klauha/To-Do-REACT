@@ -3,12 +3,13 @@ import './TaskForm.css'
 import { createTask } from '../../services/apiCalls';
 
 
-export const CreateTask = () => {
+export const TaskForm = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [isCompleted, setIsCompleted] = useState(false);
 
     const postTask = async () => {
+        
         const result = await createTask({ title, description, isCompleted });
     }
 
