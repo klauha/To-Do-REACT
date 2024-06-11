@@ -1,0 +1,87 @@
+/* TaskForm.css */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.input-form,
+.input-text-area,
+.checkbox,
+.btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
+
+.input-form,
+.input-text-area {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-form:focus,
+.input-text-area:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.input-text-area {
+    height: 120px;
+    resize: vertical;
+}
+
+.checkbox {
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #003f7f;
+    transform: scale(0.95);
+}
